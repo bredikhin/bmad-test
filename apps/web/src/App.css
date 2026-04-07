@@ -1,0 +1,172 @@
+.app {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 3rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+}
+
+.banner {
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.banner--error {
+  border-color: #fecaca;
+  background: #fef2f2;
+}
+
+.banner p {
+  margin: 0;
+  font-size: 0.925rem;
+}
+
+.add-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.add-form input {
+  flex: 1 1 12rem;
+  min-width: 0;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.375rem;
+}
+
+.add-form button {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.add-form button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.loading,
+.empty {
+  padding: 1rem 0;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 0.65rem 0.75rem;
+}
+
+@media (max-width: 480px) {
+  .row {
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "check text"
+      "meta meta";
+  }
+
+  .row-check {
+    grid-area: check;
+  }
+
+  .row-text {
+    grid-area: text;
+  }
+
+  .row-meta {
+    grid-area: meta;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2.25rem;
+  }
+}
+
+.row-check input {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.row-text {
+  min-width: 0;
+}
+
+.title {
+  margin: 0;
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+.done .title {
+  text-decoration: line-through;
+  opacity: 0.65;
+}
+
+.meta {
+  font-size: 0.8rem;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+.row-meta .meta {
+  padding-right: 0.25rem;
+}
+
+.delete {
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  border-radius: 0.375rem;
+  padding: 0.4rem 0.65rem;
+  cursor: pointer;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.delete:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.retry {
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  min-height: 44px;
+}
