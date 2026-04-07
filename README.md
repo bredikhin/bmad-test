@@ -53,6 +53,10 @@ Open `http://localhost:5173`.
 - UX: `_bmad-output/planning-artifacts/ux-design.md`
 - Architecture: `_bmad-output/planning-artifacts/architecture.md`
 - Epics: `_bmad-output/planning-artifacts/epics-and-stories.md`
+- Implementation readiness: `_bmad-output/planning-artifacts/implementation-readiness.md`
+- Sprint plan: `_bmad-output/implementation-artifacts/sprint-plan.md`
+
+Project knowledge folder (BMad `project_knowledge`): `docs/` — see `docs/README.md`.
 
 ## Build
 
